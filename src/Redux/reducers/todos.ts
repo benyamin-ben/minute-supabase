@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { Todo } from "../../Types/types";
-const initialState: Todo[] = [];
+import { TaskType } from "../../Types/types";
+const initialState: TaskType[] = [];
 
 
 const slice = createSlice({
@@ -52,7 +52,7 @@ const slice = createSlice({
     },
     putMoveTomorrow: (todos, action) => {
 
-      const find1:Todo  = todos.find(item => item.id === action.payload) as Todo
+      const find1:TaskType  = todos.find(item => item.id === action.payload) as TaskType
 
       const newTodo = todos.map(item =>{
         if(item.id ===action.payload){

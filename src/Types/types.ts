@@ -52,3 +52,10 @@ export type WeekDayStatus = {
   id?:number ;
 
 };
+
+export type NoteType = {
+  id : number , 
+  userID : string , 
+  color : string , 
+  description : string
+}

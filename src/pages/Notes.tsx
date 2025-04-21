@@ -56,6 +56,8 @@ function Notes() {
     dispatch(deleteNoteThunk(id));
   };
 
+  console.log('allstate note', allNote)
+
   return (
     <div className=" pt-[75px] w-[100%] md:h-[100vh] dark:bg-Navyblue grow dark:text-gray-300  md:pl-0  pb-8  text-center">
       <div

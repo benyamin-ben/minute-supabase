@@ -1,7 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-
-import { Todo } from "../../Types/types";
-const initialState: Todo[] = [];
+import { NoteType } from "../../Types/types";
+const initialState: NoteType[] = [];
 
 const slice = createSlice({
   name: "notes",
