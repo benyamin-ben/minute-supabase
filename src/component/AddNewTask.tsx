@@ -54,6 +54,7 @@ const AddNewTask: React.FC<AddNewTaskType> = (props):JSX.Element =>{
         props.alltask.filter(
           (item) => item.whatsDay === day && item.isComplete === 0
         ),
+        // @ts-ignore
         { hourStart, minuteStart, hourEnd, minuteEnd }
       )
     ) {

@@ -63,7 +63,7 @@ const EditTask: React.FC<EditTaskType> = (props): JSX.Element => {
             item.whatsDay === day &&
             item.isComplete === 0 &&
             item.id !== props.id
-        ),
+        ),// @ts-ignore
         { hourStart, minuteStart, hourEnd, minuteEnd }
       )
     ) {
