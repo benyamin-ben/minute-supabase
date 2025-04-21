@@ -1,0 +1,16 @@
+#weekdays{
+    display: grid;
+    grid-template-columns: Repeat(auto-fit , minmax(54px , 1fr));
+    justify-content: space-between;
+    grid-gap: 10px;
+  
+}
+
+#icons-container{
+    display: grid;
+    grid-template-columns: Repeat(auto-fill , minmax(10px , 110px));
+    grid-gap: 10px;
+
+}
+
+

@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    @font-face {
+        font-family:'Dana' ;
+        src: url('../public/fonts/Dana/woff2/DanaFaNum-Regular.woff2');
+        font-display: swap;
+    } 
+
+    @font-face {
+        font-family:'Morabba Medium' ;
+        src: url('../public/fonts/Morabba/woff2/Morabba-Medium.woff2');
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'vazir';
+        src: url('../public/fonts/vazir/Vazir.ttf');
+    }
+    @font-face {
+        font-family: 'nast';
+        src: url('../public/fonts/nast/nast.ttf');
+    }
+    @font-face {
+        font-family: 'nast2';
+        src: url('../public/fonts/nast/nast2.ttf');
+    }
+    @font-face {
+        font-family: 'yekan';
+        src: url('../public/fonts/yekan/BYekan+.ttf');
+    }
+}
