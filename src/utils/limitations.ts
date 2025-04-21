@@ -1,6 +1,6 @@
-import { Todo as TodoType } from "../Types/types";
+import {  TaskType } from "../Types/types";
 
-export function canAddNewTask(tasks: TodoType[], newTask: TodoType): boolean {
+export function canAddNewTask(tasks: TaskType[], newTask: TaskType): boolean {
   const newStart = newTask.hourStart * 60 + newTask.minuteStart; // تبدیل ساعت و دقیقه به دقیقه
   const newEnd = newTask.hourEnd * 60 + newTask.minuteEnd;
 
