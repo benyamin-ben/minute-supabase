@@ -236,7 +236,7 @@ const Dashboard = (): JSX.Element => {
           <div className=" flex-wrap   w-[60%] sm:order-2 lg:w-[74%] sm:w-full gap-x-1 sm:gap-x-0">
             <div
               id="weekdays"
-              className="flex gap-x-0 gap-y-1  text-[10px] sm:p-2  "
+              className=" gap-x-0 p-5 pt-1 gap-y-1 sm:gap-x-1  text-[10px]   "
             >
               {days.map((item, index) => {
                 return (
@@ -245,7 +245,7 @@ const Dashboard = (): JSX.Element => {
                       backgroundColor: `${
                         +specialId === item.id ? "#00dd80" : ""
                       }`,
-                      color: `${+specialId === item.id ? "white" : ""}`,
+                      color: `${+specialId === item.id ? "black" : ""}`,
                       borderBottom: `${
                         index === currentDay() ? "2px solid #00dd80" : ""
                       }`,
@@ -254,7 +254,7 @@ const Dashboard = (): JSX.Element => {
                       navigate(`/Dashboard/${item.id}`);
                     }}
                     key={index}
-                    className="hover:bg-green-500 dark:border-t-0  dark:border-slate-700  dark:bg-Navyblue2 dark:text-gray-300 bg-white p-[3px] hover:text-white border duration-[300ms] my-1 text-[10px] text-center cursor-pointer  rounded-md"
+                    className="hover:bg-green-500 dark:border-t-0   dark:border-slate-700  dark:bg-Navyblue2 dark:text-gray-300 sm:w-[70px] bg-white p-[3px] px-2 hover:text-white border duration-[300ms] my-1 text-[10px] text-center cursor-pointer  rounded-md"
                   >
                     {item.name}
                   </div>
@@ -319,7 +319,7 @@ const Dashboard = (): JSX.Element => {
                 </svg>
               </DashboardCards>
 
-              <div className="border-[1px] dark:bg-green1 dark:border-none flex flex-col items-center justify-between  h-[150px]  mt-2 dark:drop-shadow-sm drop-shadow-[0_0_10px_#ffd25a] border-yellow-300 bg-[#fff8de]   group cursor-pointer   p-2 rounded-[35px] text-center">
+              <div className="border-[1px] dark:bg-Navyblue2 dark:text-green1 dark:border-none flex flex-col items-center justify-between  h-[150px]  mt-2 dark:drop-shadow-sm drop-shadow-[0_0_10px_#ffd25a] border-yellow-300 bg-[#fff8de]   group cursor-pointer   p-2 rounded-[35px] text-center">
                 <div>
                   <div className="pb-3 ">
                     <svg
@@ -467,7 +467,7 @@ const Dashboard = (): JSX.Element => {
                       </g>
                     </svg>
                   </div>
-                  <div className=" text-[11px] text-black">
+                  <div className=" text-[11px] dark:text-green1 text-black">
                     Time remaining today{" "}
                     <p className="text-[8px] inline">
                       {convertNumberToDay(specialId)}
@@ -508,7 +508,7 @@ const Dashboard = (): JSX.Element => {
             <div className=" ">
               <div className="flex justify-start gap-x-6 px-2 bg-gray-300 dark:border-t dark:border-slate-700 text-white dark:bg-Navyblue2 py-2 rounded-tl-lg rounded-tr-lg text-center ">
                 <div className="flex dark:text-green-600 flex-col  text-gray-600 mx-1 [&>*]:cursor-pointer   items-center gap-x-2 text-[9px]">
-                  <div className=" flex mx-1  dark:text-gray-300  text-gray-600 [&>*]:cursor-pointer   items-center gap-x-2 text-[10px]">
+                  <div className=" flex mx-1  dark:text-gray-300  text-gray-600 [&>*]:cursor-pointer   items-center gap-x-2 text-[10px] sm:text-[13px]">
                     <p
                       onClick={() => {
                         setsortBy(0);
@@ -590,7 +590,7 @@ const Dashboard = (): JSX.Element => {
                             className="border-[1px] hover:bg-green-500 duration-500 cursor-pointer border-gray-500 rounded-[2px] w-[15px] h-[15px]"
                           ></div>
                           <div className="  items-center  gap-x-1">
-                            <p className="xs:text-[10px]">{item.title}</p>
+                            <p className="xs:text-[14px] ">{item.title}</p>
                             <p className="text-[10px] dark:text-gray-400 text-gray-600">
                               {item.description.length > 20
                                 ? item.description.slice(0, 20) + " ..."
@@ -786,7 +786,7 @@ const Dashboard = (): JSX.Element => {
                   }}
                 >
                   <div className="transition-all  p-[6px] duration-[400ms] ">
-                    {item.title.slice(1, 40)}
+                    {item.title.slice(0, 40)}
                   </div>
                   <div className="absolute left-0 right-0 top-0 bottom-0  group-hover:dark:bg-red-600 group-hover:bg-red-400 rounded-md p-[2px] group-hover:flex justify-center items-center hidden">
                     delete

@@ -102,7 +102,7 @@ const EditTask: React.FC<EditTaskType> = (props): JSX.Element => {
 
   return (
     <div className="w-[50%] block sm:w-[85%] md:w-[70%] dark:border-slate-700 dark:border text-[13px] rounded-sm  z-[114] shadow-xl  fixed dark:bg-Navyblue  bg-white left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
-      <p className="text-[16px]   bg-green1 text-center   text-white ">
+      <p className="text-[16px]   bg-green1 dark:bg-Navyblue2 text-center   text-white ">
         edit task
       </p>
 
@@ -111,7 +111,7 @@ const EditTask: React.FC<EditTaskType> = (props): JSX.Element => {
           <p className="text-[11px] text-gray-600 mb-2"> Activity Title</p>
           {/* title */}
           <input
-            className="text-sm  border-b-[1px] caret-green1 dark:text-gray-300  dark:bg-Navyblue2 border-red-400 outline-none w-[50%]  "
+            className="text-sm sm:w-[100%] sm:text-[15px] sm:p-2 border-b-[1px] caret-green1 dark:text-gray-300  dark:bg-Navyblue2 border-red-400 outline-none w-[50%]  "
             type="text"
             placeholder="title ..."
             value={title}
@@ -144,7 +144,7 @@ const EditTask: React.FC<EditTaskType> = (props): JSX.Element => {
             value={description}
             placeholder="write here ..."
             name=""
-            className="bg-green-100 caret-green1 dark:text-gray-300  dark:bg-Navyblue2 border-0 focus:outline-none focus:border-white focus:bg-green-100  w-full rounded-md p-2"
+            className="bg-green-100 caret-green1 sm:h-20 dark:text-gray-300  dark:bg-Navyblue2 border-0 focus:outline-none focus:border-white focus:bg-green-100  w-full rounded-md p-2"
             id=""
           ></textarea>
         </div>
@@ -160,6 +160,8 @@ const EditTask: React.FC<EditTaskType> = (props): JSX.Element => {
                 }}
                 style={{
                   backgroundColor: `${priority === 1 ? "#00dd80" : ""}`,
+                  color: `${priority === 1 ? "black" : ""}`,
+
                 }}
                 className="hover:bg-green-300 p-[2px] rounded-md"
               >
@@ -171,6 +173,8 @@ const EditTask: React.FC<EditTaskType> = (props): JSX.Element => {
                 }}
                 style={{
                   backgroundColor: `${priority === 2 ? "#00dd80" : ""}`,
+                  color: `${priority === 2 ? "black" : ""}`,
+
                 }}
                 className="hover:bg-green-300 p-[2px] rounded-md"
               >
@@ -182,6 +186,8 @@ const EditTask: React.FC<EditTaskType> = (props): JSX.Element => {
                 }}
                 style={{
                   backgroundColor: `${priority === 3 ? "#00dd80" : ""}`,
+                  color: `${priority === 3 ? "black" : ""}`,
+
                 }}
                 className="hover:bg-green-300 p-[2px] rounded-md"
               >
@@ -335,7 +341,7 @@ const EditTask: React.FC<EditTaskType> = (props): JSX.Element => {
               onClick={() => {
                 props.func(false);
               }}
-              className="text-gray-500 dark:hover:bg-Navyblue2 duration-300 hover:bg-gray-100  p-[4px] rounded-md"
+              className="text-gray-300 sm:text-[18px] dark:hover:bg-Navyblue2 duration-300 hover:bg-gray-100  p-[4px] rounded-md"
             >
               cancel
             </button>
@@ -343,7 +349,7 @@ const EditTask: React.FC<EditTaskType> = (props): JSX.Element => {
               onClick={() => {
                 formValidation();
               }}
-              className="bg-[#2196f3] duration-[400ms] dark:bg-Navyblue2 border-Navyblue hover:border-slate-600 dark:border text-white p-[4px] rounded-md"
+              className="bg-[#2196f3] sm:text-[18px] duration-[400ms] dark:bg-Navyblue2 border-Navyblue hover:border-slate-600 dark:border text-white p-[4px] rounded-md"
             >
               update
             </button>
@@ -353,7 +359,7 @@ const EditTask: React.FC<EditTaskType> = (props): JSX.Element => {
               deleteTodo(props.id);
               props.func(false);
             }}
-            className="bg-red-600 cursor-pointer rounded-md p-1 hover:bg-red-500 duration-200 text-white"
+            className="bg-red-600  cursor-pointer rounded-md p-1 hover:bg-red-500 duration-200 text-white"
           >
             DELETE
           </div>
