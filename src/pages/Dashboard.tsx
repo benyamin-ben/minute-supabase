@@ -228,7 +228,7 @@ const Dashboard = (): JSX.Element => {
               ></textarea>
             </div>
             <div>
-              <button onClick={() => {putText(text); handleSave()}} className="absolute left-1 dark:bottom-2 bottom-1 bg-green1 text-white dark:text-black sm:left-auto sm:bottom-1 right-0 p-[2px] px-2 text-[11px] dark:hover:bg-green1 duration-300  dark:bg-green-200">save</button>
+              <button onClick={() => {putText(text); handleSave()}} className="absolute left-1 dark:bottom-2 bottom-1 bg-green1 text-white dark:text-black sm:left-4 sm:right-4 sm:bottom-1 right-0 p-[2px] px-2 text-[11px] dark:hover:bg-green1 duration-300  dark:bg-green-200">save</button>
             </div>
           </div>
 

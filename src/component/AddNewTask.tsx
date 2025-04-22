@@ -97,7 +97,7 @@ const AddNewTask: React.FC<AddNewTaskType> = (props):JSX.Element =>{
           <p className="text-[11px] text-gray-600 mb-2"> Activity Title</p>
           {/* title */}
           <input
-            className="text-sm  border-b-[1px] caret-green1 dark:text-gray-300  dark:bg-Navyblue2 border-red-400 outline-none w-[50%]  "
+            className="text-sm sm:w-[100%] sm:text-[15px] sm:p-2 border-b-[1px] caret-green1 dark:text-gray-300  dark:bg-Navyblue2 border-red-400 outline-none w-[50%]  "
             type="text"
             placeholder="title ..."
             value={title}
@@ -130,7 +130,7 @@ const AddNewTask: React.FC<AddNewTaskType> = (props):JSX.Element =>{
             value={description}
             placeholder="write here ..."
             name=""
-            className="bg-green-100 caret-green1 dark:text-gray-300  dark:bg-Navyblue2 border-0 focus:outline-none focus:border-white focus:bg-green-100  w-full rounded-md p-2"
+            className="bg-green-100 caret-green1 sm:h-20 dark:text-gray-300  dark:bg-Navyblue2 border-0 focus:outline-none focus:border-white focus:bg-green-100  w-full rounded-md p-2"
             id=""
           ></textarea>
         </div>
@@ -146,6 +146,8 @@ const AddNewTask: React.FC<AddNewTaskType> = (props):JSX.Element =>{
                 }}
                 style={{
                   backgroundColor: `${priority === 1 ? "#00dd80" : ""}`,
+                  color: `${priority === 1 ? "black" : ""}`,
+
                 }}
                 className="hover:bg-green-300 p-[2px] rounded-md"
               >
@@ -157,6 +159,8 @@ const AddNewTask: React.FC<AddNewTaskType> = (props):JSX.Element =>{
                 }}
                 style={{
                   backgroundColor: `${priority === 2 ? "#00dd80" : ""}`,
+                  color: `${priority === 2 ? "black" : ""}`,
+
                 }}
                 className="hover:bg-green-300 p-[2px] rounded-md"
               >
@@ -168,6 +172,8 @@ const AddNewTask: React.FC<AddNewTaskType> = (props):JSX.Element =>{
                 }}
                 style={{
                   backgroundColor: `${priority === 3 ? "#00dd80" : ""}`,
+                  color: `${priority === 3 ? "black" : ""}`,
+
                 }}
                 className="hover:bg-green-300 p-[2px] rounded-md"
               >
@@ -328,7 +334,7 @@ const AddNewTask: React.FC<AddNewTaskType> = (props):JSX.Element =>{
               onClick={() => {
                 props.func(false);
               }}
-              className="text-gray-500 dark:hover:bg-Navyblue2 duration-300 hover:bg-gray-100  p-[4px] rounded-md"
+              className="text-gray-300 sm:text-[18px] dark:hover:bg-Navyblue2 duration-300 hover:bg-gray-100  p-[4px] rounded-md"
             >
               cancel
             </button>
@@ -336,7 +342,7 @@ const AddNewTask: React.FC<AddNewTaskType> = (props):JSX.Element =>{
               onClick={() => {
                 validation();
               }}
-              className="bg-[#2196f3] duration-[400ms] dark:bg-Navyblue2 border-Navyblue hover:border-slate-600 dark:border text-white p-[4px] rounded-md"
+              className="bg-[#2196f3] sm:text-[18px] duration-[400ms] dark:bg-Navyblue2 border-Navyblue hover:border-slate-600 dark:border text-white p-[4px] rounded-md"
             >
               create
             </button>

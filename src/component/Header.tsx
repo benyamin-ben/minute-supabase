@@ -38,9 +38,11 @@ function Header({setIsShowLeftBar}:HeaderProps) {
             />
           </svg>
         </div>
-        <Link  to={'/'}> 
-          <div className="text-2xl font-bold text-white">minute</div>
+        <div className="text-2xl font-bold text-white">
+        <Link className="inline-block" to={'/'}> 
+          minute
         </Link>
+        </div>
       </div>
 
       {/* right section */}

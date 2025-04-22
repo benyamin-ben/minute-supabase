@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Home: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white dark:bg-[#030619] sm:mt-10 w-full flex items-center justify-center text-white p-6">
+    <div className="min-h-screen bg-white dark:bg-[#030619] sm:pt-10 w-full flex items-center justify-center text-white p-6">
       <div className="text-center space-y-6 max-w-2xl">
         <h1 className="text-5xl font-extrabold text-[#00dc82]">
           Boost Your Productivity
